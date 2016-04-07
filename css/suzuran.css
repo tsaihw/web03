@@ -50,7 +50,7 @@ h4,
 h5,
 h6 {
   font-family: "cwtexming",serif;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 /*網站顏色會不小心露餡*/
@@ -82,10 +82,17 @@ a:active,
 a.active {
 }
 .section-heading{
-font-family: "cwtexming",serif;
+  font-family: "cwtexming",serif;
+  font-weight: 700;
+}
+.list-heading{
+  font:18px "Microsoft JhengHei",  sans-serif;
+  color: #000000;
+  text-shadow: 1px 1px 0px rgba(0,0,0,0.2);
 }
 .content {
   font:18px "Microsoft JhengHei",  sans-serif;
+  color: #222222;
   font-weight: 400;
   letter-spacing: 0.3px;
   margin:0 0 20px;
@@ -249,6 +256,8 @@ font-family: "cwtexming",serif;
     font-family: "jasmine",serif;
     font-size: 2.3em;
     color: #222222;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2),
+                 0px -2px 1px rgba(255,255,255,0.2);
     /* font-weight:bold;粗體看起來很不秀麗*/
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
