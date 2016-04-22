@@ -28,3 +28,24 @@ $('.pull-down').each(function() {
   $this.css('margin-top', $this.parent().height()-$this.height())
 });</script>
 </body>
+
+#160422-2
+新增
+img-responsive
+img-responsive-tall
+img-responsive-short
+讓圖片在大螢幕置底(增加上方padding)
+用@media (max-width: 978px) {
+    .img-responsive{
+      padding:0;
+      margin:0;
+    }
+    .img-responsive-tall {
+      padding:0;
+      margin:0;
+    }
+    .img-responsive-short {
+      padding:0;
+      margin:0;
+    }
+}讓小裝置不會有padding
