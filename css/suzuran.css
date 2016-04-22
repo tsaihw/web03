@@ -83,7 +83,12 @@ a.active {
 }
 li{
 }
-
+.img-responsive{
+  max-width: 100%;
+  height: auto;
+  vertical-align:middle;
+  border:0;
+}
 .section-heading{
   font-family: "cwtexming",serif;
   font-weight: 700;
