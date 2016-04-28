@@ -141,12 +141,12 @@ body {
   line-height: 1.5;
 }
 .content-section-a {
-      padding: 0px 0px 0px 0px;
+      padding: 20px 0px 20px 0px;
       background-color: #fff9f6;
 }
 
 .content-section-b {
-      padding: 10px 0px 15px 0px;
+      padding: 20px 0px 20px 0px;
       border-top: 2px solid #f0e3df;
       border-bottom: 2px solid #f0e3df;
       background-color: #fff6f3;
