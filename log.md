@@ -49,3 +49,8 @@ img-responsive-short
       margin:0;
     }
 }讓小裝置不會有padding
+
+#160428
+新增兩張圖片
+拿掉<hr class="section-heading-spacer">比較好調整padding
+調整padding
