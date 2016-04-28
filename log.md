@@ -51,6 +51,11 @@ img-responsive-short
 }讓小裝置不會有padding
 
 #160428
+新footer
+<p class="copyright">版權所有 暖暖心理治療所 © 2016<span style="float:right;">網頁製作 <a href="http://www.wordpress.org/">Guppy Squad</a></span></p>
 新增兩張圖片
 拿掉<hr class="section-heading-spacer">比較好調整padding
 調整padding
+治療所介紹那邊調
+<div class="col-lg-6 col-sm-6">
+<div class="col-lg-5 col-lg-offset-1 col-sm-6">讓圖大一點
