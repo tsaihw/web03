@@ -62,11 +62,12 @@ img-responsive-short
 
 #160430
 新增公告用alert
-<div class="row">
-  <div class="alert alert-warning fade in">
-    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-    <strong>公告：</strong> 暖暖心理治療所春節期間暫停營業。
-  </div>
+<div class="col-lg-12 col-sm-6">
+<div class="alert alert-warning fade in">
+  <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+  <strong>公告：</strong> 暖暖心理治療所春節期間暫停營業。
+</div>
+</div>
 詳細資訊可以考慮用modal或Popovers
 http://www.w3schools.com/bootstrap/bootstrap_modal.asp
 http://www.w3schools.com/bootstrap/bootstrap_popover.asp
