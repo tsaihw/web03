@@ -82,3 +82,5 @@ blockquote {
   margin: 20px 0px 20px 0px;
   border-left: 3px solid #eee; }
 }
+
+整理&刪除一些多餘css

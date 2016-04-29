@@ -51,14 +51,14 @@ h6 {
 }
 /*限制寬度*/
 .container{
-  max-width:1080px
+  max-width:1024px
 }
 /*網站顏色底色沒調好會露餡*/
 body,
 html {
   width: 100%;
   height: 100%;
-  padding-top: 20px;
+  padding-top: 50px;
   background-color:#fff9f6;
 }
 p {
@@ -123,20 +123,16 @@ li{
     }
     .img-responsive-short {
       padding:0;
-      margin:0;
+      margin:0;}
+    body {
+        padding-top: 30px
+      }
     }
-}
 
-body {
-      padding:0;
-}
-.col-lg-4{
-}
 
-}
 .section-heading{
   font-family: "cwtexming",serif;
-  font-weight: 700;
+  font-weight: 400;
 }
 .list-heading{
   font:18px "Microsoft JhengHei",  sans-serif;
@@ -148,11 +144,11 @@ body {
   color: #222222;
   font-weight: 400;
   letter-spacing: 0.3px;
-  margin:0 0 20px;
+  margin:0 0 0 0px;
   line-height: 1.5;
 }
 .content-section-a1 {
-      padding: 30px 0px 20px 0px;
+      padding: 0px 0px 30px 0px;
       background-color: #fff9f6;
 }
 .content-section-a {
@@ -187,7 +183,6 @@ body {
       line-height: 1.6;
       text-align: left
 }
-
 .footer
 {
       padding: 3px 0px 1px 0px;
@@ -200,7 +195,7 @@ body {
     padding-top: 8px;
     padding-bottom: 2px;
 }
-/* navbar底色=小裝置 */
+/* navbar底色=小裝置*/
 .navbar-default {
   background-color: #FFF6F2;
   padding: 7px 0 1px 0;
@@ -240,7 +235,6 @@ body {
   background-color: #555555;
 }
 
-
 /******************* navbar list*********************/
 /* navbar list字型顏色=所有裝置*/
 .navbar-default .nav li a {
@@ -263,14 +257,53 @@ body {
   color: #222222;
   background-color: #FFF6F2;
 }
-
 /* navbar list用滑鼠選定時的顏色 */
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
   color: #222222;
   background-color: #FFF6F2;
 }
-/******************* navbar list*********************/
+/* 滑動前navbar顏色&大小 */
+.navbar-default {
+  background-color: #FFF6F2;
+  padding: 8px 0 0 0;
+  -webkit-transition: padding 0.7s;
+  -moz-transition: padding 0.7s;
+  transition: padding 0.7s;
+  border-top: 2px solid #151515;
+  border-bottom: 1px solid #f0e3df;
+}
+/* 滑動後navbar顏色&大小
+  .navbar-default.navbar-shrink {
+    background-color: rgba(255, 246, 242, 0.2);
+  }*/
+/* 滑動前brand顏色大小 */
+.navbar-default .navbar-brand {
+  font-family: "jasmine",serif;
+  font-size: 2.3em;
+  color: #222222;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.2),
+               0px -2px 1px rgba(255,255,255,0.2);
+  /* font-weight:bold;粗體看起來很不秀麗*/
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+/* 滑動後brand顏色大小
+.navbar-default.navbar-shrink .navbar-brand {
+    font-size: 2.3em;
+    color: #666666;
+  }*/
+.navbar-default .navbar-nav > .active > a {
+    border-radius: 3px;
+}
+/* navbar list捲動時跳到的顏色 */
+.navbar-default .navbar-nav > .active > a {
+    border-radius: 0;
+    color: #222222;
+    background-color: #FFF6F2;
+    border-bottom: 2px solid #555555;
+}
 
 /* 大螢幕設定 */
 @media (min-width: 768px) {
@@ -281,64 +314,6 @@ body {
   margin:0 0 20px;
   padding: 0px 0px 0px 3px;
   line-height: 1.5;
-}
-.content-section-a1 {
-        padding: 50px 0px 50px 20px;
-        background-color: #fff9f6;
-}
-.content-section-a {
-        padding: 50px 0px 50px 50px;
-        background-color: #fff9f6;
-}
-.content-section-b {
-      padding: 50px 0px 50px 0px;
-      border-top: 2px solid #f0e3df;
-      border-bottom: 2px solid #f0e3df;
-      background-color: #fff6f3;
-}
-/* 滑動前navbar顏色&大小 */
-  .navbar-default {
-    background-color: #FFF6F2;
-    padding: 8px 0 0 0;
-    -webkit-transition: padding 0.7s;
-    -moz-transition: padding 0.7s;
-    transition: padding 0.7s;
-    border-top: 2px solid #151515;
-    border-bottom: 1px solid #f0e3df;
-  }
-/* 滑動後navbar顏色&大小
-  .navbar-default.navbar-shrink {
-    background-color: rgba(255, 246, 242, 0.2);
-  }*/
-/* 滑動前brand顏色大小 */
-.navbar-default .navbar-brand {
-    font-family: "jasmine",serif;
-    font-size: 2.3em;
-    color: #222222;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.2),
-                 0px -2px 1px rgba(255,255,255,0.2);
-    /* font-weight:bold;粗體看起來很不秀麗*/
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    transition: all 0.3s;
-  }
-/* 滑動後brand顏色大小
-.navbar-default.navbar-shrink .navbar-brand {
-    font-size: 2.3em;
-    color: #666666;
-  }*/
-.navbar-default .navbar-nav > .active > a {
-    border-radius: 3px;
-  }
-/* navbar list捲動時跳到的顏色 */
-.navbar-default .navbar-nav > .active > a {
-    border-radius: 0;
-    color: #222222;
-    background-color: #FFF6F2;
-    border-bottom: 2px solid #555555;
-  }
-}
-header {
 }
 @media (min-width: 768px) {
 }
