@@ -98,3 +98,7 @@ ul.B{
   line-height: 1.6;
   list-style-type: disc;
 }
+自動更新年份
+<script type="text/javascript">
+document.write(new Date().getFullYear());
+</script>
