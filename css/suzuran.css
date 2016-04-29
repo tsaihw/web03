@@ -40,9 +40,6 @@
         url(//fonts.gstatic.com/ea/cwtexhei/v3/cwTeXHei-zhonly.woff) format('woff'),
         url(//fonts.gstatic.com/ea/cwtexhei/v3/cwTeXHei-zhonly.ttf) format('truetype');
       }*/
-body,
-{
-}
 h1,
 h2,
 h3,
@@ -52,8 +49,11 @@ h6 {
   font-family: "cwtexming",serif;
   font-weight: 400;
 }
-
-/*網站顏色會不小心露餡*/
+/*限制寬度*/
+.container{
+  max-width:1080px
+}
+/*網站顏色底色沒調好會露餡*/
 body,
 html {
   width: 100%;
@@ -64,6 +64,11 @@ html {
 p {
   font-size: 14px;
   line-height: 1.75;
+}
+blockquote {
+  padding: 0px 0px 0px 30px;
+  margin: 20px 0px 20px 0px;
+  border-left: 3px solid #eee; }
 }
 p.large {
   font-size: 16px;
@@ -190,7 +195,7 @@ body {
 }
 .copyright {
     font-family: "Microsoft JhengHei",serif;
-    font-size: 0.9em;
+    font-size: 1.0em;
     color: #888888;
     padding-top: 8px;
     padding-bottom: 2px;
@@ -303,11 +308,10 @@ body {
   }
 /* 滑動後navbar顏色&大小
   .navbar-default.navbar-shrink {
-    background-color: #FaFaFa;
-    padding: 10px 0;
+    background-color: rgba(255, 246, 242, 0.2);
   }*/
 /* 滑動前brand顏色大小 */
-  .navbar-default .navbar-brand {
+.navbar-default .navbar-brand {
     font-family: "jasmine",serif;
     font-size: 2.3em;
     color: #222222;
@@ -319,9 +323,9 @@ body {
     transition: all 0.3s;
   }
 /* 滑動後brand顏色大小
-  .navbar-default.navbar-shrink .navbar-brand {
+.navbar-default.navbar-shrink .navbar-brand {
     font-size: 2.3em;
-    color: #222222;
+    color: #666666;
   }*/
 .navbar-default .navbar-nav > .active > a {
     border-radius: 3px;

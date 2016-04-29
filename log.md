@@ -59,3 +59,25 @@ img-responsive-short
 治療所介紹那邊調
 <div class="col-lg-6 col-sm-6">
 <div class="col-lg-5 col-lg-offset-1 col-sm-6">讓圖大一點
+
+#160430
+新增公告用alert
+<div class="row">
+  <div class="alert alert-warning fade in">
+    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+    <strong>公告：</strong> 暖暖心理治療所春節期間暫停營業。
+  </div>
+詳細資訊可以考慮用modal或Popovers
+http://www.w3schools.com/bootstrap/bootstrap_modal.asp
+http://www.w3schools.com/bootstrap/bootstrap_popover.asp
+
+/*限制寬度*/
+.container{
+  max-width:1080px
+}
+
+blockquote {
+  padding: 0px 0px 0px 30px;
+  margin: 20px 0px 20px 0px;
+  border-left: 3px solid #eee; }
+}
