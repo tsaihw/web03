@@ -84,3 +84,17 @@ blockquote {
 }
 
 整理&刪除一些多餘css
+
+讓list格式好一點
+ul.A{
+  letter-spacing: 0.3px;
+  margin:10px 0px 0px 0px;
+  line-height: 1.5;
+  list-style-type: none;
+}
+ul.B{
+  letter-spacing: 0.3px;
+  margin:10px 0 0 5px;
+  line-height: 1.6;
+  list-style-type: disc;
+}
