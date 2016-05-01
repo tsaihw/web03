@@ -154,15 +154,15 @@ ul.B{
   line-height: 1.5;
 }
 .content-section-a1 {
-      padding: 10px 0px 30px 0px;
+      padding: 20px 0px 50px 0px;
       background-color: #fff9f6;
 }
 .content-section-a {
-      padding: 30px 0px 30px 0px;
+      padding: 50px 0px 50px 0px;
       background-color: #fff9f6;
 }
 .content-section-b {
-      padding: 30px 0px 30px 0px;
+      padding: 50px 0px 50px 0px;
       border-top: 2px solid #f0e3df;
       border-bottom: 2px solid #f0e3df;
       background-color: #fff6f3;
@@ -201,19 +201,19 @@ ul.B{
     padding-top: 8px;
     padding-bottom: 2px;
 }
-/* navbar底色=小裝置*/
+/* navbar底色=小裝置
 .navbar-default {
   background-color: #FFF6F2;
   padding: 7px 0 1px 0;
   border-top: 2px solid #151515;
   border-bottom: 1px solid #f0e3df;
-}
-/* navbar brand字型=小裝置 */
+}*/
+/* navbar brand字型=小裝置
 .navbar-default .navbar-brand {
   color: #222222;
   font-size: 1.9em;
   font-family: "jasmine",serif;
-}
+}*/
 /* navbar brand與滑鼠互動字型
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus,
@@ -221,13 +221,12 @@ ul.B{
 .navbar-default .navbar-brand.active {
   color: #222222;
 }*/
-/* 小裝置拉下的邊界顏色*/
+/* 小裝置拉下的邊界顏色-->沒影響啦XD
 .navbar-default .navbar-collapse {
-  border-color: #ede0dc;
-}
+}*/
 /* 小裝置按鈕 */
 .navbar-default .navbar-toggle {
-  margin: 5px 15px 10px 10px;
+  margin: 0px 25px 0px 0px;
   background-color: #555555;
   border-color: none;
 }
@@ -269,7 +268,7 @@ ul.B{
   color: #222222;
   background-color: #FFF6F2;
 }
-/* 滑動前navbar顏色&大小 */
+/* 滑鼠捲動前navbar顏色&大小 */
 .navbar-default {
   background-color: #FFF6F2;
   padding: 8px 0 0 0;
@@ -279,11 +278,12 @@ ul.B{
   border-top: 2px solid #151515;
   border-bottom: 1px solid #f0e3df;
 }
-/* 滑動後navbar顏色&大小
+/* 滑鼠捲動後navbar顏色&大小
   .navbar-default.navbar-shrink {
     background-color: rgba(255, 246, 242, 0.2);
   }*/
-/* 滑動前brand顏色大小 */
+/* 滑鼠捲動前brand顏色大小 */
+
 .navbar-default .navbar-brand {
   font-family: "jasmine",serif;
   font-size: 2.3em;
@@ -295,7 +295,7 @@ ul.B{
   -moz-transition: all 0.3s;
   transition: all 0.3s;
 }
-/* 滑動後brand顏色大小
+/* 滑鼠捲動後brand顏色大小
 .navbar-default.navbar-shrink .navbar-brand {
     font-size: 2.3em;
     color: #666666;
@@ -308,7 +308,7 @@ ul.B{
     border-radius: 0;
     color: #222222;
     background-color: #FFF6F2;
-    border-bottom: 2px solid #555555;
+
 }
 
 /* 大螢幕設定 */
@@ -320,7 +320,16 @@ ul.B{
   margin:0 0 20px;
   padding: 0px 0px 0px 3px;
   line-height: 1.5;
-}
+
+}}
+@media (min-width: 900px) {
+/* navbar list捲動時大螢幕有底線, collapse後無底線 */
+.navbar-default .navbar-nav > .active > a {
+    border-radius: 0;
+    color: #222222;
+    background-color: #FFF6F2;
+    border-bottom: 2px solid #555555;
+}}
 @media (min-width: 768px) {
 }
 body {
@@ -335,29 +344,34 @@ body {
     .navbar-toggle {
         display: block;
     }
-    .navbar-collapse {
-        border-top: 1px solid transparent;
-        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
-    }
+
     .navbar-fixed-top {
 		top: 0;
 		border-width: 0 0 1px;
 	}
+
     .navbar-collapse.collapse {
         display: none!important;
     }
     .navbar-nav {
         float: none!important;
-		margin-top: 7.5px;
-	}
+
+	  }
 	.navbar-nav>li {
         float: none;
+        margin: 0px 0px 7.5px 0px;
     }
-    .navbar-nav>li>a {
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
-    .collapse.in{
+  .collapse.in{
   		display:block !important;
+
 	}
+  .navbar-brand,
+  .navbar-nav li a {
+    line-height: 30px;
+    height: 30px;
+    padding-top: 4;
+}/*小裝置減低高度+ padding top=4px才能置中*/
+  .navbar-default .navbar-brand {
+    font-size: 1.7em;
+}/*小裝置品牌名稱變小+ padding top=4px才能置中*/
 }
