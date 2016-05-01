@@ -140,3 +140,7 @@ navbar提早collapse
   		display:block !important;
 	}
 }
+
+#160501
+降低了小裝置的navbar高度
+拿掉小裝置選單底線
