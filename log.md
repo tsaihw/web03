@@ -142,5 +142,14 @@ navbar提早collapse
 }
 
 #160501
-降低了小裝置的navbar高度
+降低了小裝置的navbar高度http://stackoverflow.com/questions/18599778/decreasing-height-of-bootstrap-3-0-navbar
+.navbar-nav > li > a, .navbar-brand {
+    padding-top:4px !important;
+    padding-bottom:0 !important;
+    height: 28px;
+}
+.navbar {min-height:28px !important;}
+
 拿掉小裝置選單底線
+
+把toggle鈕變小http://stackoverflow.com/questions/26831661/bootstrap-3-navbar-toggle-height

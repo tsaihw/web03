@@ -227,7 +227,8 @@ ul.B{
 /* 小裝置按鈕 */
 .navbar-default .navbar-toggle {
   margin: 0px 25px 0px 0px;
-  background-color: #555555;
+  padding:6 7 6 7;
+  background-color: #CCC4C1;
   border-color: none;
 }
 /* 小裝置按鈕的橫線 */
@@ -237,11 +238,11 @@ ul.B{
 /* 小裝置按鈕游標盤旋而過 */
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-  background-color: #555555;
+  background-color: #B7B1AE;
 }
 
 /******************* navbar list*********************/
-/* navbar list字型顏色=所有裝置*/
+/* navbar list字型顏色（包括橫列選單+下拉選單）=所有裝置*/
 .navbar-default .nav li a {
   font-family: "Microsoft JhengHei",  sans-serif;
   font-weight: 400;
@@ -322,7 +323,7 @@ ul.B{
   line-height: 1.5;
 
 }}
-@media (min-width: 900px) {
+@media (min-width: 901px) {
 /* navbar list捲動時大螢幕有底線, collapse後無底線 */
 .navbar-default .navbar-nav > .active > a {
     border-radius: 0;
@@ -336,7 +337,7 @@ body {
 }
 @media (max-width: 900px) {
     .navbar-header {
-        float: none;
+    float: none;
     }
     .navbar-left,.navbar-right {
         float: none !important;
@@ -344,18 +345,15 @@ body {
     .navbar-toggle {
         display: block;
     }
-
     .navbar-fixed-top {
 		top: 0;
 		border-width: 0 0 1px;
-	}
-
+	  }
     .navbar-collapse.collapse {
         display: none!important;
     }
     .navbar-nav {
         float: none!important;
-
 	  }
 	.navbar-nav>li {
         float: none;
@@ -363,15 +361,14 @@ body {
     }
   .collapse.in{
   		display:block !important;
-
 	}
-  .navbar-brand,
-  .navbar-nav li a {
-    line-height: 30px;
-    height: 30px;
-    padding-top: 4;
-}/*小裝置減低高度+ padding top=4px才能置中*/
   .navbar-default .navbar-brand {
     font-size: 1.7em;
-}/*小裝置品牌名稱變小+ padding top=4px才能置中*/
+  }/*小裝置品牌名稱變小+ padding top=4px才能置中*/
+  .navbar-nav > li > a, .navbar-brand {
+    padding-top:7px !important;
+    padding-bottom:0 !important;
+    height: 35px;
+  }/*小裝置減低高度1*/
+  .navbar {min-height:35px !important;}/*小裝置減低高度2/
 }
