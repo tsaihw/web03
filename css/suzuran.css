@@ -51,7 +51,7 @@ h6 {
 }
 /*限制寬度*/
 .container{
-  max-width:1024px
+  max-width:900px
 }
 /*網站顏色底色沒調好會露餡*/
 body,
@@ -122,16 +122,17 @@ ul.B{
 @media (max-width: 767px) {
     .img-responsive{
       padding:0;
-      margin:0;
+      margin:50 0 0 0;
     }
+
     .img-responsive-tall {
       max-width: 100%;
       padding:0;
-      margin:0;
+      margin:50 0 0 0;
     }
     .img-responsive-short {
       padding:0;
-      margin:0;}
+      margin:20 0 0 0;}
     }
 
 
@@ -141,12 +142,12 @@ ul.B{
   font-weight: 400;
 }
 .list-heading{
-  font:18px "Microsoft JhengHei",  sans-serif;
+  font:16px "Microsoft JhengHei",  sans-serif;
   color: #000000;
   text-shadow: 1px 1px 0px rgba(0,0,0,0.2);
 }
 .content {
-  font:18px "Microsoft JhengHei",  sans-serif;
+  font:16px "Microsoft JhengHei",  sans-serif;
   color: #222222;
   font-weight: 400;
   letter-spacing: 0.3px;
@@ -315,7 +316,7 @@ ul.B{
 /* 大螢幕設定 */
 @media (min-width: 768px) {
 .content {
-  font:18px "Microsoft JhengHei",  sans-serif;
+  font:16px "Microsoft JhengHei",  sans-serif;
   font-weight: 400;
   letter-spacing: 0.3px;
   margin:0 0 20px;
