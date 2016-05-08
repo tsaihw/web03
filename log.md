@@ -153,3 +153,9 @@ navbar提早collapse
 拿掉小裝置選單底線
 
 把toggle鈕變小http://stackoverflow.com/questions/26831661/bootstrap-3-navbar-toggle-height
+
+padding改成margin
+#160508
+小裝置圖片上緣margin++
+所有圖都畫完啦
+寬度限制為900
